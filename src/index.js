@@ -1,3 +1,4 @@
+import fs from 'fs';
 import { createInterface } from 'readline';
 
 await main();
@@ -75,7 +76,7 @@ async function displayMenu(model) {
     }
 
     // Grab the selected item
-    if (validSelection(selection, model['menu'].length)) {
+    if (validSelection(selection, menuLevel.length)) {
       selectedItem = menuLevel[Number(selection) - 1];
 
       console.log(
