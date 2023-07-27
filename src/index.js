@@ -141,7 +141,7 @@ function validSelection(selection, max) {
 
 /**
  * Formats a numerical price as USD
- * @param {number || string} price
+ * @param {number | string} price
  * @returns {string} formatted price in USD
  */
 function formatCurrency(price) {
