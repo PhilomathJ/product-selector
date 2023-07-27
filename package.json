@@ -1,0 +1,16 @@
+{
+  "name": "pats-pricing-tool",
+  "version": "1.0.0",
+  "description": "Proof-of-concept for multi-selection pricing model",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jsfairbanks@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}
