@@ -55,8 +55,10 @@ Currently displays:
 - Displays a sample link that could point to a summary page
 
 Screenshot:
-![output-screenshot]('resources/sample-output.png')
+![output-screenshot][output-screenshot]
 
 #### `createLink()`
 
 Creates the URL with all selected IDs as query parameters
+
+[output-screenshot]: https://github.com/PhilomathJ/product-selector/blob/main/resources/sample-output.png
