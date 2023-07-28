@@ -66,8 +66,10 @@ async function displayMenu(model) {
   console.log('Menu');
   console.log('----');
 
+  // Menu tier iterator
   let menuLevel = model['menu'];
 
+  // Loop through menu levels until no more selections are made
   while (menuLevel.length) {
     const selection = await promptUser(menuLevel);
 
@@ -93,6 +95,7 @@ async function displayMenu(model) {
     if (selectedItem['children']) {
       menuLevel = selectedItem['children'];
     } else {
+      // If no more children, reset menu level to top
       menuLevel = [];
     }
   }
@@ -180,6 +183,7 @@ function displayResults(selections) {
       finalSelection.price
     )}`
   );
+
   console.log(`Total selections: ${selections.length}`);
   console.log(`Final price: ${formatCurrency(totalPrice)}`);
 
