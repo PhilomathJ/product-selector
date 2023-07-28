@@ -196,5 +196,5 @@ function createLink(selections) {
   if (!selections || selections.length == 0) return;
 
   const ids = selections.map((item) => item.id);
-  return `"https://www.example.com/products?ids=${ids.join(',')}"`;
+  return `"https://www.example.com/products?ids=${ids.join('-')}"`;
 }
